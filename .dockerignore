@@ -1,0 +1,4 @@
+*
+!Dockerfile
+!npm-pack.tgz
+!pkg-deps.json

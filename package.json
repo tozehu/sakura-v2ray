@@ -1,0 +1,28 @@
+{
+  "name": "sakura-v2ray",
+  "private": true,
+  "version": "0.0.1",
+  "files": [
+    "*.js",
+    "conf",
+    "www"
+  ],
+  "scripts": {
+    "start": "pm2-runtime start pm2.config.js",
+    "prebuild": "mv $(npm pack) npm-pack.tgz && node -pe '(d=`dependencies`,JSON.stringify({[d]:require(`./package.json`)[d]},null,2))' >pkg-deps.json",
+    "build": "docker build . -t shynome/${npm_package_name}:dev",
+    "test": "tsc -p jsconfig.json",
+    "preversion": "npm t",
+    "postversion": "git push --follow-tags"
+  },
+  "description": "",
+  "author": "shynome",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@types/node": "^12.0.2"
+  },
+  "dependencies": {
+    "@shynome/v2ray_generator": "^3.1.1",
+    "pm2": "^3.5.1"
+  }
+}
