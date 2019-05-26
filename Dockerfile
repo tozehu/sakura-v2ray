@@ -21,7 +21,7 @@ COPY npm-pack.tgz /tmp/npm-pack.tgz
 RUN set -x \
   && tar -xzf /tmp/npm-pack.tgz -C /tmp \
   && mv /tmp/package /app \
-  && mv /tmp/pkg/node_modules /app
+  && chmod +x /app/conf/docker-entrypoint.sh
 
 RUN rm -rf /tmp/npm-pack.tgz /tmp/pkg $(npm config get cache)
 
