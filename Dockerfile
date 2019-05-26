@@ -3,7 +3,7 @@ FROM v2ray/official:latest@sha256:558cb532c6f6aa91667dbc7804f94127b74c4ffee0a2f7
 FROM alpine:3.9.4@sha256:769fddc7cc2f0a1c35abb2f91432e8beecf83916c421420e6a6da9f8975464b6 as Base
 
 RUN set -e \
-  && sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
+  # && sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
   && apk add --no-cache caddy nodejs npm
 
 COPY --from=V2ray /usr/bin/v2ray /usr/bin/v2ray
