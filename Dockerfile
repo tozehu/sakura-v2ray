@@ -14,8 +14,8 @@ ENV NODE_ENV=production
 
 WORKDIR /tmp/pkg
 COPY pkg-deps.json /tmp/pkg/package.json
-RUN npm i --registry=https://registry.npm.taobao.org
-# RUN npm i
+# RUN npm i --registry=https://registry.npm.taobao.org
+RUN npm i
 
 COPY npm-pack.tgz /tmp/npm-pack.tgz
 RUN set -x \
