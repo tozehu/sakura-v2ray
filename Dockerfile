@@ -23,6 +23,7 @@ RUN set -x \
   && mv /tmp/package /app \
   && chmod +x /app/conf/docker-entrypoint.sh
 
+ENTRYPOINT [ "/app/conf/docker-entrypoint.sh" ]
 RUN rm -rf /tmp/npm-pack.tgz /tmp/pkg $(npm config get cache)
 
 ENV PATH=$PATH:/usr/bin/v2ray
