@@ -7,7 +7,7 @@
       "settings": {
         "clients": [ { "id": "{{VMESS_ID}}", "alterId": 64 } ]
       },
-      "streamSettings": { "network": "ws", "wsSettings": { "path": "{{PROXY_PATH}}" } }
+      "streamSettings": { "network": "ws", "wsSettings": { "path": "{{PROXY_PATH}}", "headers": { "Origin": "" } } }
     },
     {
       "port": 3006,
