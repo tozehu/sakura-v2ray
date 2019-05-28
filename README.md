@@ -4,7 +4,7 @@
 
 ### 如何使用
 
-- https://app.arukas.io 注册账号完成验证
+- https://app.arukas.io 注册账号完成验证 （注：我创建应用的时候被要求验证信用卡和手机号码，不知道现在改了没，以你自己遇到的为准）
 - 创建容器， 配置如下：(其中镜像名是：`shynome/sakura-v2ray:0.0.3` )
   ![](./docs/sakura-config.jpg)
 - 在 `v2rayN` 中导入分享链接后进行修改，只要修改服务器地址(即上图中的 Endpoint)就能用了
