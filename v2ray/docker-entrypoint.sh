@@ -3,7 +3,7 @@
 set -xe
 
 CONF_TPL_PATH='/v2ray/conf.tpl.jsonc'
-CONF_PATH='/etc/v2ray/config.jsonc'
+CONF_PATH='/v2ray/config.jsonc'
 
 if [ -z $DOCKER_ENV ]; then
   CONF_TPL_PATH='v2ray/conf.tpl.jsonc'

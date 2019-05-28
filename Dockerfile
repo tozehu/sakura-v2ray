@@ -13,4 +13,4 @@ ENTRYPOINT [ "/v2ray/docker-entrypoint.sh" ]
 
 WORKDIR /v2ray
 
-CMD [ "v2ray", "-config", "/etc/v2ray/config.jsonc" ]
+CMD [ "v2ray", "-config", "/v2ray/config.jsonc" ]
