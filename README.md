@@ -9,3 +9,12 @@
   ![](./docs/sakura-config.jpg)
 - 在 `v2rayN` 中导入分享链接后进行修改，只要修改服务器地址(即上图中的 Endpoint)就能用了
   分享链接：<pre>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogImFydWthcy5pbyB3cyIsDQogICJhZGQiOiAic3VpeWkuYXJ1a2FzY2xvdWQuaW8iLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiODk4MmJhYzAtZTFmYy00YzA5LWJlYTMtM2EwZTQwMmZhYmQzIiwNCiAgImFpZCI6ICI2NCIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiIiwNCiAgInBhdGgiOiAiL3JheSIsDQogICJ0bHMiOiAidGxzIg0KfQ==</pre>
+
+### 环境变量使用
+
+如果你不明白下面的变量是干啥的，请不要修改
+
+环境变量 | 默认值 | 用途
+--|--|--
+VMESS_ID | `8982bac0-e1fc-4c09-bea3-3a0e402fabd3` | vmess id
+PROXY_PATH | `/ray` | ws proxy path
