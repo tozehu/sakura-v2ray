@@ -1,4 +1,8 @@
-FROM v2ray/official:lzatest@sha256:558cb532c6f6aa91667dbc7804f94127b74c4ffee0a2f75e151d05e3525aaadb as V2ray
+FROM alpine:3.9.4@sha256:769fddc7cc2f0a1c35abb2f91432e8beecf83916c421420e6a6da9f8975464b6 as V2ray
+
+RUN mkdir /usr/bin/v2ray \
+  && wget -q -O - https://github.com/v2ray/v2ray-core/releases/download/v4.18.2/v2ray-linux-64.zip \
+  | unzip -d /usr/bin/v2ray - v2ray v2ctl
 
 FROM alpine:3.9.4@sha256:769fddc7cc2f0a1c35abb2f91432e8beecf83916c421420e6a6da9f8975464b6
 
