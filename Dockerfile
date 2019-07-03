@@ -10,7 +10,7 @@ FROM alpine:3.9.4@sha256:769fddc7cc2f0a1c35abb2f91432e8beecf83916c421420e6a6da9f
 COPY --from=V2ray /usr/bin/v2ray /usr/bin/v2ray
 ENV PATH=$PATH:/usr/bin/v2ray
 
-COPY ./v2ray /v2ray2
+COPY /v2ray /v2ray
 RUN chmod +x /v2ray/docker-entrypoint.sh
 
 ENV DOCKER_ENV=true
